@@ -283,109 +283,69 @@ abstract
 -   B)  Using bullets and letters. (B)
 
 -   C)  Using bullets and letters. (C)
+Copilot said: ````markdown # Tables ## Grid Tables Here's a grid table
+Markdown
 
-## Tables
+# Tables
 
-### Grid Tables
+## Grid Tables
 
-Here\'s a grid table followed by a simple table:
+Here's a grid table followed by a simple table:
 
-+------------------------+------------+----------+----------+
 | Header row, column 1   | Header 2   | Header 3 | Header 4 |
-| (header rows optional) |            |          |          |
-+========================+============+==========+==========+
+|------------------------|------------|----------|----------|
 | body row 1, column 1   | column 2   | column 3 | column 4 |
-+------------------------+------------+----------+----------+
-| body row 2             | Cells may  | an       |          |
-|                        | sp         | columns. |          |
-+------------------------+------------+----------+----------+
-| body row 3             | Cells may  | -        | lls      |
-|                        |            |    Table |          |
-|                        |            |     ce   |          |
-+------------------------+------------+----------+----------+
+| body row 2             | Cells may span columns.          |          |
+| body row 3             | Cells may  | - Table cells       |          |
+| body row 4             | span rows. | - contain           | - body elements.    |
+| body row 5             | Cells may also be     |          |
+|                        | empty: `-->`        |          |
 
-+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--+ span rows. \| -
-contain \| \| body row 4 \| \| - body elements. \|
-+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--+\-\-\-\-\-\-\-\-\-\-\--+\-\-\-\-\-\-\-\-\--+\-\-\-\-\-\-\-\-\--+
-\| body row 5 \| Cells may also be \| \| \| \| empty: `-->` \| \|
-+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--+\-\-\-\-\-\-\-\-\--+
+Simple Table:
 
-+-------------+--------+
-| Inputs      | Output |
-+=============+========+
-| > A B       | A or B |
-+-------------+--------+
-| ===== ===== | ====== |
-+-------------+--------+
-| False False | False  |
-+-------------+--------+
-| True False  | True   |
-+-------------+--------+
-| False True  | True   |
-+-------------+--------+
-| True True   | True   |
-+-------------+--------+
+| Inputs |      | Output |
+|--------|------|--------|
+|   A    |  B   | A or B |
+|--------|------|--------|
+| False  | False| False  |
+| True   | False| True   |
+| False  | True | True   |
+| True   | True | True   |
 
-#### Giant Tables
+## Giant Tables
 
-  -----------------------------------------------------------------------------------------------------------
-  Header 1 Header 2 Header 3 Header 1 Header 2 Header 3 Header 1 Header 2 Header 3 Header 1 Header 2 Header 3
-  -------- -------- -------- -------- -------- -------- -------- -------- -------- -------- -------- --------
-  body row column 2 column 3 body row column 2 column 3 body row column 2 column 3 body row column 2 column 3
-  1                          1                          1                          1                 
+| Header 1   | Header 2   | Header 3  | Header 1   | Header 2   | Header 3  | Header 1   | Header 2   | Header 3  | Header 1   | Header 2   | Header 3  |
+|------------|------------|-----------|------------|------------|-----------|------------|------------|-----------|------------|------------|-----------|
+| body row 1 | column 2   | column 3  | body row 1 | column 2   | column 3  | body row 1 | column 2   | column 3  | body row 1 | column 2   | column 3  |
+| body row 1 | column 2   | column 3  | body row 1 | column 2   | column 3  | body row 1 | column 2   | column 3  | body row 1 | column 2   | column 3  |
+| body row 1 | column 2   | column 3  | body row 1 | column 2   | column 3  | body row 1 | column 2   | column 3  | body row 1 | column 2   | column 3  |
+| body row 1 | column 2   | column 3  | body row 1 | column 2   | column 3  | body row 1 | column 2   | column 3  | body row 1 | column 2   | column 3  |
 
-  body row column 2 column 3 body row column 2 column 3 body row column 2 column 3 body row column 2 column 3
-  1                          1                          1                          1                 
+## List Tables
 
-  body row column 2 column 3 body row column 2 column 3 body row column 2 column 3 body row column 2 column 3
-  1                          1                          1                          1                 
+**List tables can have captions like this one.**
 
-  body row column 2 column 3 body row column 2 column 3 body row column 2 column 3 body row column 2 column 3
-  1                          1                          1                          1                 
-  -----------------------------------------------------------------------------------------------------------
+| List table   | Header 1 | Header 2 | Header 3 long. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet mauris arcu. |
+|--------------|----------|----------|---------------------------------------------------------------------------------------------------|
+| Stub Row 1   | Row 1    | Column 2 | Column 3 long. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet mauris arcu.  |
+| Stub Row 2   | Row 2    | Column 2 | Column 3 long. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet mauris arcu.  |
+| Stub Row 3   | Row 3    | Column 2 | Column 3 long. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet mauris arcu.  |
 
-### List Tables
+**This is a list table with images in it.**
 
-  ----------------------------------------------------------------------------
-  List      Header 1 Header 2  Header 3 long. Lorem ipsum dolor sit amet,
-  table                        consectetur adipiscing elit. Nam sit amet
-                               mauris arcu.
-  --------- -------- --------- -----------------------------------------------
-  Stub Row  Row 1    Column 2  Column 3 long. Lorem ipsum dolor sit amet,
-  1                            consectetur adipiscing elit. Nam sit amet
-                               mauris arcu.
+| Figure 1 | Figure 2 |
+|----------|----------|
+| ![](static/yi_jing_01_chien.jpg)<br>This is a short caption for a figure. | ![](static/yi_jing_01_chien.jpg)<br>This is a long caption for a figure. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor dolor in odio posuere, vitae ornare libero mattis. In lobortis justo vestibulum nibh aliquet, non. |
 
-  Stub Row  Row 2    Column 2  Column 3 long. Lorem ipsum dolor sit amet,
-  2                            consectetur adipiscing elit. Nam sit amet
-                               mauris arcu.
-
-  Stub Row  Row 3    Column 2  Column 3 long. Lorem ipsum dolor sit amet,
-  3                            consectetur adipiscing elit. Nam sit amet
-                               mauris arcu.
-  ----------------------------------------------------------------------------
-
-  : List tables can have captions like this one.
-
-  ----------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![This is a short caption for a figure.](static/yi_jing_01_chien.jpg)   ![This is a long caption for a figure. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor dolor in odio posuere, vitae ornare libero mattis. In lobortis justo vestibulum nibh aliquet, non.](static/yi_jing_01_chien.jpg)
-  ----------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-  : This is a list table with images in it.
-
-### Tables with paragraphs
+## Tables with paragraphs
 
 Test to see that tables behave well with nested paragraphs.
 
-+------------+----------+-------------------------+
 | Precedence | Operator | Description             |
-+============+==========+=========================+
-| 1          | :        | Scope resolution        |
-+------------+----------+-------------------------+
+|------------|----------|-------------------------|
+| 1          | ::       | Scope resolution        |
 | 2          | ( )      | Function call           |
-|            |          |                         |
-|            | \[ \]    | Subscript               |
-|            |          |                         |
+|            | [ ]      | Subscript               |
 |            | .        | Member access           |
-|            |          |                         |
 |            | .{ }     | Bit-field concatenation |
-+------------+----------+-------------------------+
+
