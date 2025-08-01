@@ -1,32 +1,32 @@
-title: nikescar.github.io
-description: personal page.
-show_downloads: false
-# remote_theme: nikescar/jekyll-theme-rtd
-remote_theme : https://github.com/nikescar/jekyll-theme-rtd
-plugins:
-- jekyll-remote-theme
 
-webrick:
-  headers:
-    Access-Control-Allow-Origin: "*"
+# Build settings
+# markdown: kramdown
+# theme: minima
+
+# this _config.yml be read from jekyll, solidjs
+title: Jekyll Solidbase Theme
+description: Solidbase Theme to Jekyll to use with GitHub Pages.
+show_downloads: true
+remote_theme: nikescar/jekyll-theme-solidbase
+plugins:
+  - jekyll-remote-theme
+
+# Development server config, needed to load some of the content
+#webrick:
+#  headers:
+#    Access-Control-Allow-Origin: "*"
 
 # Theme settings
-repo_url: 'https://github.com/nikescar/nikescar.github.io'
+site_author: Woojae, Park
+repo_url: 'https://github.com/nikescar/jekyll-theme-solidbase'
 edit_on_github: true
 github_docs_folder: false
 sticky_navigation: true
-# prev_next_buttons_location: both
 search_enabled: false
-site_author: Woojae, Park
-# logo: 'https://tui.dure.app/assets/css/theme.css'
-site_favicon: 'assets/img/favicon.ico'
-site_theme: 'assets/css/theme302.css'
-# prev_next_buttons_location: None
-# prev_next_buttons_location: top
-# prev_next_buttons_location: bottom
-prev_next_buttons_location: both
-# google_analytics: UA-XXXXX-Y
-google_analytics_anonymize_ip: true
+# logo: 'https://your.url/image.png'
+# site_favicon: 'https://your.url/here.ico'
+# theme: 'https://your.url/assets/css/theme.css'
+# extra_theme: 'https://your.url/assets/css/theme_extra.css'
 # The highlight.js library provides 79 different colours for their syntax highlighting. The default is github-gist.
 hljs_style: github-gist
-exclude: []
+exclude: ['tmp']
