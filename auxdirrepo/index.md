@@ -1,0 +1,1 @@
+nikescar.github.com/auxdirrepo/index.md
