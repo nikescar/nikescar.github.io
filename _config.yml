@@ -43,7 +43,7 @@ theme_settings:
       # - Packages: /packages
       # - Blog: /blog
     sidebar:
-      - 문서:
+      - Docs:
         - 가이드:
             "후라이드 치킨": /friedchicken
             "양념 치킨": /sweetchicken
