@@ -14,6 +14,9 @@ include:
   - .well-known
   - docs
   - resources
+  - CREDITS.md
+  - README.md
+  - LICENSE-MIT
 
 # Theme settings
 repo_url: 'https://github.com/nikescar/nikescar.github.io'
@@ -36,6 +39,7 @@ theme_settings:
       문서: /docs
       리드미: /readme
       도움주신분: /credits
+      라이센스: /license-mit
       # - Packages: /packages
       # - Blog: /blog
     sidebar:
