@@ -26,7 +26,8 @@ jobs:
 
       - name: clone solidbase theme github
         run: |
-          git clone https://github.com/nikescar/jekyll-theme-solidbase.git .solidbase --depth 1
+          theme_upstream=$(grep -m1 'theme_upstream:' _config.yml | awk '{print $2}')
+          git clone $theme_upstream .solidbase --depth 1
           pushd ./.solidbase
           bash ghworkflow.sh
           popd
