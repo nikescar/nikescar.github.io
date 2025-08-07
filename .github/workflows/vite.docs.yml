@@ -26,8 +26,14 @@ jobs:
 
       - name: clone solidbase theme github
         run: |
-          theme_upstream=$(grep -m1 'theme_upstream:' _config.yml | awk '{print $2}')
-          git clone $theme_upstream .solidbase --depth 1
+          export theme_upstream=$(grep -m1 'theme_upstream:' _config.yml | awk '{print $2}' | sed "s/'//g")/archive/refs/heads/main.tar.gz
+          wget -q "$theme_upstream" -O main.tar.gz
+          if [ $? -ne 0 ]; then
+              echo "Failed to download theme from $theme_upstream"
+              exit 1
+          fi
+          mkdir -p .solidbase
+          tar -xzf main.tar.gz --strip-components=1 -C .solidbase
           pushd ./.solidbase
           bash ghworkflow.sh
           popd
