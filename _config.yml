@@ -22,7 +22,6 @@ include:
   - resources
   - CREDITS.md
   - README.md
-  - LICENSE-MIT
 
 # Theme settings
 theme_upstream: 'https://github.com/nikescar/ghaction-ghpage-solidbase-builder'
@@ -36,7 +35,7 @@ theme_settings:
       문서: /docs
       리드미: /readme
       도움주신분: /credits
-      라이센스: /license-mit
+      라이센스: https://github.com/nikescar/nikescar.github.io?tab=MIT-2-ov-file
     sidebar:
       - Docs:
         - 가이드:
