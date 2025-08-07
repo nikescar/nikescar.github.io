@@ -1,4 +1,4 @@
-# configuration for vite.docs solidbase https://github.com/nikescar/ghaction-ghpage-solidbase-builder
+# configuration for vite.docs solidbase https://github.com/nikescar/mdx-sitegen-solidbase
 # Site settings
 title: 치킨 만드는 법
 description: 다양한 치킨 만드는 법 소개
@@ -11,8 +11,8 @@ lang: ko
 
 # 404 page redirection rules
 404_subsite_urls:
-  - /ghaction-ghpage-solidbase-builder/
-  - /ghaction-ghpage-solid-ui-builder/
+  - /mdx-sitegen-solidbase/
+  - /mdx-sitegen-solid-ui/
 # Excluded items can be re-enabled by adding them to the `include:` list.
 exclude:
   - .github/
@@ -27,11 +27,16 @@ include:
   - README.md
 
 # Theme settings
-theme_upstream: 'https://github.com/nikescar/ghaction-ghpage-solidbase-builder'
+theme_upstream: 'https://github.com/nikescar/mdx-sitegen-solidbase'
 theme_config:
   social_links:
     gitHub: 'https://github.com/nikescar/nikescar.github.io'
     discord: 'https://discord.gg/'
+    opencollective: 'https://opencollective.com/create'
+    custom:
+      link: 
+      logo: 
+      label:
   nav:
     문서: /docs
     리드미: /readme

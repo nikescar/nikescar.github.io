@@ -37,4 +37,4 @@ features:
 
 ---
 
-이 사이트는 [ghaction-ghpage-solidbase-builder](https://github.com/nikescar/ghaction-ghpage-solidbase-builder)와 [solidbase](https://github.com/kobaltedev/solidbase) 로 만들어졌습니다. 좀더 다양한 예제는 [solidbase-docs](https://solidbase.dev/guide/markdown) 에 있습니다.
+이 사이트는 [mdx-sitegen-solidbase](https://github.com/nikescar/mdx-sitegen-solidbase)와 [solidbase](https://github.com/kobaltedev/solidbase) 로 만들어졌습니다. 좀더 다양한 예제는 [solidbase-docs](https://solidbase.dev/guide/markdown) 에 있습니다.
