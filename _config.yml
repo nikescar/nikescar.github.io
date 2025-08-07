@@ -5,6 +5,11 @@ description: 다양한 치킨 만드는 법 소개
 repo_url: 'https://github.com/nikescar/nikescar.github.io'
 site_url: 'https://nikescar.github.io'
 site_favicon: './resources/favicon.ico'
+
+# 404 page redirection rules
+404_subsite_urls:
+  - /ghaction-ghpage-solidbase-builder/
+  - /ghaction-ghpage-solid-ui-builder/
 # Excluded items can be re-enabled by adding them to the `include:` list.
 exclude:
   - .github/
