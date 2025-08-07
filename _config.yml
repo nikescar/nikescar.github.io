@@ -5,6 +5,9 @@ description: 다양한 치킨 만드는 법 소개
 repo_url: 'https://github.com/nikescar/nikescar.github.io'
 site_url: 'https://nikescar.github.io'
 site_favicon: './resources/favicon.ico'
+issue_link: "https://github.com/nikescar/nikescar.github.io/issues"
+edit_path: "https://github.com/nikescar/nikescar.github.io/edit/main/:path"
+lang: ko
 
 # 404 page redirection rules
 404_subsite_urls:
@@ -28,17 +31,14 @@ theme_upstream: 'https://github.com/nikescar/ghaction-ghpage-solidbase-builder'
 theme_settings:
   social_links:
     GitHub: 'https://github.com/nikescar/nikescar.github.io'
-  en:
-    title: 치킨에 관한 모든것
-    lang: en
-    nav:
-      문서: /docs
-      리드미: /readme
-      도움주신분: /credits
-      라이센스: https://github.com/nikescar/nikescar.github.io?tab=MIT-2-ov-file
-    sidebar:
-      - Docs:
-        - 가이드:
-            "후라이드 치킨": /friedchicken
-            "양념 치킨": /sweetchicken
+  nav:
+    문서: /docs
+    리드미: /readme
+    도움주신분: /credits
+    라이센스: https://github.com/nikescar/nikescar.github.io?tab=MIT-2-ov-file
+  sidebar:
+    - Docs:
+      - 가이드:
+          "후라이드 치킨": /friedchicken
+          "양념 치킨": /sweetchicken
 
