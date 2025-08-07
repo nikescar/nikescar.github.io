@@ -28,7 +28,7 @@ include:
 
 # Theme settings
 theme_upstream: 'https://github.com/nikescar/ghaction-ghpage-solidbase-builder'
-theme_settings:
+theme_config:
   social_links:
     GitHub: 'https://github.com/nikescar/nikescar.github.io'
   nav:
